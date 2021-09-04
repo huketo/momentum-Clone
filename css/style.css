@@ -5,6 +5,7 @@
 
 /* Components */
 @import "components/top-row.css";
+@import "components/center-above.css";
 
 /* Screens */
 @import "screens/app-screen.css";
