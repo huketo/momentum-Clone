@@ -6,11 +6,18 @@
 /* Components */
 
 /* Screens */
+@import "screens/app-screen.css";
 
 body {
   color: white;
   font-family: "Teko", sans-serif;
   height: 100vh;
+  /* stop dragging */
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 body > img {
