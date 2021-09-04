@@ -8,29 +8,58 @@
     <title>Momentum</title>
   </head>
   <body>
-    <form id="login-form" class="hidden">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="What is your name?"
-      />
-      <button>Log In</button>
-    </form>
-    <h2 id="clock">00:00:00</h2>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-      <input type="text" placeholder="Write a To do and Press Enter" required />
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
-      <span></span>
-      <span></span>
-    </div>
-    <div id="weather">
-      <img src="#" />
-      <span></span>
-      <span></span>
+    <div class="app">
+      <div class="top-row">
+        <div class="top-left"></div>
+        <div class="top-center"></div>
+        <div class="top-right">
+          <div id="weather">
+            <img src="#" />
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="center-above"></div>
+
+      <div class="center">
+        <h2 id="clock">00:00:00</h2>
+        <form id="login-form" class="hidden">
+          <input
+            required
+            maxlength="15"
+            type="text"
+            placeholder="What is your name?"
+          />
+          <button>Log In</button>
+        </form>
+        <h1 id="greeting" class="hidden"></h1>
+      </div>
+
+      <div class="center-below"></div>
+
+      <div class="bottom-row">
+        <div class="bottom-left"></div>
+        <div class="bottom-center">
+          <div id="quote">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="bottom-right">
+          <div class="todo">
+            <form id="todo-form">
+              <input
+                type="text"
+                placeholder="Write a To do and Press Enter"
+                required
+              />
+            </form>
+            <ul id="todo-list"></ul>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="js/greetings.js"></script>
