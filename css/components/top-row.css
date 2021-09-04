@@ -1,0 +1,96 @@
+/* top-row */
+.top-row {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 0 0 auto;
+  padding: 0px var(--horizontal-space);
+  padding-top: 20px;
+}
+
+/* top-left */
+.top-left {
+  width: 300px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-left label {
+  font-size: 30px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.playlist {
+  background: white;
+  color: var(--gray-normal);
+  border-radius: var(--box-border-radius);
+  width: 100%;
+  height: 100px;
+  padding: 15px;
+  z-index: 1;
+  display: block;
+  clear: both;
+  position: relative;
+}
+
+#play-toggle {
+  display: none;
+}
+
+#play-toggle:checked ~ .playlist {
+  opacity: 0;
+  height: 0;
+  display: none;
+}
+
+.playlist-song {
+  font-size: 25px;
+}
+
+.box-nipple {
+  width: 0px;
+  height: 0px;
+  display: block;
+  opacity: 1;
+  position: absolute;
+  color: white;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid;
+  top: -7px;
+  left: 25px;
+}
+
+/* top-right */
+
+#weather {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+}
+
+.weather-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.weather-column img {
+  position: absolute;
+  left: -60px;
+  width: 60px;
+  height: 60px;
+}
+
+.weather-temp {
+  font-size: 30px;
+  margin-top: 5px;
+}
+
+.weather-city {
+  font-size: 20px;
+}

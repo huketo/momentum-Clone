@@ -1,3 +1,5 @@
 :root {
-  --horizontal-space: 25px;
+  --horizontal-space: 20px;
+  --box-border-radius: 5px;
+  --gray-normal: rgba(0, 0, 0, 0.3);
 }
