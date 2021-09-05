@@ -42,7 +42,7 @@
       <div class="center-above"></div>
 
       <div class="center">
-        <h2 id="clock">00:00:00</h2>
+        <span id="clock">00:00:00</span>
         <form id="login-form" class="hidden">
           <input
             required
@@ -55,7 +55,27 @@
         <h1 id="greeting" class="hidden"></h1>
       </div>
 
-      <div class="center-below"></div>
+      <div class="center-below">
+        <form class="search-form">
+          <div class="search-cover"></div>
+          <label class="search-img" for="search-keyword"
+            ><i class="fas fa-search"></i
+          ></label>
+          <input
+            id="search-keyword"
+            type="text"
+            maxlength="255"
+            autocomplete="off"
+          />
+          <div class="search-engine">
+            <span><i class="fab fa-google" name="google"></i></span>
+            <span class="fa fa-a" name="naver"></span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+
+          <div class="search-underbar"></div>
+        </form>
+      </div>
 
       <div class="bottom-row">
         <div class="bottom-left"></div>
@@ -86,5 +106,9 @@
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
+    <script
+      src="https://kit.fontawesome.com/d34744a1b9.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
