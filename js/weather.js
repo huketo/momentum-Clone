@@ -10,6 +10,7 @@ function onGeoOk(position) {
       const weatherIcon = document.querySelector("#weather img");
       const weather = document.querySelector("#weather .weather-temp");
       const city = document.querySelector("#weather .weather-city");
+      weatherIcon.classList.remove(HIDDEN_CLASSNAME);
       weatherIcon.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
       weather.innerText = `${data.main.temp} ℃`;
       city.innerText = data.name;

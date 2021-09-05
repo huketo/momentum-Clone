@@ -86,10 +86,11 @@
   background: white;
   color: var(--gray-normal);
   border-radius: var(--box-border-radius);
-  width: 60px;
-  padding: 15px;
+  width: 80px;
+  padding: 15px 0px;
   z-index: 1;
   position: relative;
+  box-sizing: border-box;
 }
 
 .search-engine__list {
@@ -98,8 +99,14 @@
 
 .search-engine__list li:first-child {
   color: #4285f4;
+  cursor: pointer;
 }
 
 .search-engine__list li:last-child {
   color: #19ce60;
+  cursor: pointer;
+}
+
+.search-engine__list li:hover {
+  background-color: var(--gray-small);
 }

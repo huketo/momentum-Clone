@@ -2,4 +2,5 @@
   --horizontal-space: 20px;
   --box-border-radius: 5px;
   --gray-normal: rgba(0, 0, 0, 0.3);
+  --gray-small: rgba(0, 0, 0, 0.1);
 }
