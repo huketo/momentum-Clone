@@ -1,0 +1,13 @@
+.box-nipple {
+  width: 0px;
+  height: 0px;
+  display: block;
+  opacity: 1;
+  position: absolute;
+  color: white;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid;
+  top: -7px;
+  left: 25px;
+}

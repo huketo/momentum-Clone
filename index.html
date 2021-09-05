@@ -56,25 +56,36 @@
       </div>
 
       <div class="center-below">
-        <form class="search-form">
-          <div class="search-cover"></div>
-          <label class="search-img" for="search-keyword"
-            ><i class="fas fa-search"></i
-          ></label>
-          <input
-            id="search-keyword"
-            type="text"
-            maxlength="255"
-            autocomplete="off"
-          />
+        <div class="search-bar">
+          <form class="search-form">
+            <label class="search-img" for="search-keyword"
+              ><i class="fas fa-search"></i
+            ></label>
+            <input
+              id="search-keyword"
+              type="text"
+              maxlength="255"
+              autocomplete="off"
+            />
+          </form>
           <div class="search-engine">
-            <span><i class="fab fa-google" name="google"></i></span>
-            <span class="fa fa-a" name="naver"></span>
-            <i class="fas fa-chevron-down"></i>
+            <span class="search-engine__img">G</span>
+            <input type="checkbox" id="search-engine__check" checked />
+            <label for="search-engine__check">
+              <i class="fas fa-chevron-down"></i>
+            </label>
+            <div class="sub-box">
+              <div class="search-engine__box">
+                <div class="box-nipple"></div>
+                <ul class="search-engine__list">
+                  <li>Google</li>
+                  <li>Naver</li>
+                </ul>
+              </div>
+            </div>
           </div>
-
           <div class="search-underbar"></div>
-        </form>
+        </div>
       </div>
 
       <div class="bottom-row">
@@ -106,6 +117,7 @@
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/search.js"></script>
     <script
       src="https://kit.fontawesome.com/d34744a1b9.js"
       crossorigin="anonymous"
