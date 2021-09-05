@@ -10,5 +10,23 @@
 }
 
 #greeting {
-  font-size: 400%;
+  font-size: 300%;
+}
+
+#login-form button {
+  display: none;
+}
+
+#login-form input {
+  width: 180px;
+  border: none;
+  background: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#login-form input::placeholder {
+  color: white;
+  font-size: 20px;
 }

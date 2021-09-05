@@ -20,6 +20,16 @@ function paintGreetings(username) {
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
 
+loginInput.addEventListener("focus", () => {
+  loginInput.style.cursor = "text";
+  loginInput.placeholder = "";
+});
+
+loginInput.addEventListener("blur", () => {
+  loginInput.style.cursor = "pointer";
+  loginInput.placeholder = "What is your name?";
+});
+
 if (savedUsername === null) {
   loginForm.classList.remove(HIDDEN_CLASSNAME);
   loginForm.addEventListener("submit", onLoginSubmit);

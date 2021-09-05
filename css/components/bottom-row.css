@@ -145,6 +145,11 @@
   align-items: flex-start;
   position: relative;
 }
+
+#todo-list li input {
+  margin-right: 10px;
+}
+
 #todo-list li button,
 #todo-list li input {
   margin-top: 5px;
