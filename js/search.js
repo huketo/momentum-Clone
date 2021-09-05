@@ -73,6 +73,7 @@ function searchKeyword(event) {
   } else if (searchEngine === NAVER_KEY) {
     window.open("https://search.naver.com/search.naver?query=" + keyword);
   }
+  searchInput.value = "";
 }
 
 // Submit 시 새창 열고 검색결과

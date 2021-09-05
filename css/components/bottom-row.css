@@ -1,0 +1,55 @@
+.bottom-row {
+  height: 60px;
+  display: flex;
+  padding: 0px var(--horizontal-space);
+  padding-bottom: 20px;
+}
+
+.bottom-left {
+  display: flex;
+  flex: 0 0 225px;
+  align-items: flex-end;
+}
+
+.bottom-center {
+  min-width: 0;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.bottom-right {
+  display: flex;
+  flex: 0 0 225px;
+  align-items: flex-end;
+}
+
+/* Quetes */
+#quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quote-text {
+  font-size: 22px;
+  transition: all 0.35s ease;
+}
+
+.quote-author {
+  font-size: 20px;
+  opacity: 0;
+  transition: all 0.35s ease;
+}
+
+#quote:hover > .quote-text {
+  transform: translateY(-5px);
+  transition: all 0.35s ease;
+}
+
+#quote:hover > .quote-author {
+  transform: translateY(5px);
+  opacity: 1;
+  transition: all 0.35s ease;
+}

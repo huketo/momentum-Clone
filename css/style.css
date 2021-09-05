@@ -9,6 +9,7 @@
 @import "components/center.css";
 @import "components/center-below.css";
 @import "components/sub-box.css";
+@import "components/bottom-row.css";
 
 /* Screens */
 @import "screens/app-screen.css";
